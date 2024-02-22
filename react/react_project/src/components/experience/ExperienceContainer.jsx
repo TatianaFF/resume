@@ -7,7 +7,7 @@ import { getExperience as getExperienceSelector } from "../../redux/selectors"
 const ExperienceContainer = ({ getExperience, experience, ...props }) => {
     useEffect(() => {
         getExperience()
-    }, [experience])
+    }, [])
 
     return <Experience experience={experience} { ...props }/>
 }
