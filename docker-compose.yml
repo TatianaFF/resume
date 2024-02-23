@@ -26,6 +26,11 @@ services:
       context: ./react
       dockerfile: Dockerfile
 
+    command: sh -c "npm install"
+#      >
+#      sh -c "python manage.py migrate &&
+#             python manage.py runserver 0.0.0.0:8000"
+
     ports:
       - '3000:3000'
 
