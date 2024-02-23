@@ -33,8 +33,7 @@ services:
 
     volumes:
       - ./react/react_project:/app/frontend
-      - /app/frontend/node_modules
-#      -         ./react/react_project/node_modules:
+      - ./react/react_project/node_modules:/app/frontend/node_modules
 
     depends_on:
       - backend
