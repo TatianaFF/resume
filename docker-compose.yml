@@ -26,7 +26,9 @@ services:
       context: ./react
       dockerfile: Dockerfile
 
-    command: npm i
+    command: >
+      sh -c "npm i &&
+            npm start"
 
     ports:
       - '3000:3000'
