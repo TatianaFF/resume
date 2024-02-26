@@ -29,7 +29,7 @@ def create_data(apps, schema_editor):
     ).save()
     Experience(
         start_date=datetime.date(year=2023, month=3, day=1),
-        end_date=datetime.date(year=2022, month=12, day=10),
+        end_date=datetime.date(year=2023, month=12, day=10),
         company="ООО Софт-Центр",
         description="Kotlin разработчик"
     ).save()
@@ -298,6 +298,13 @@ def create_data(apps, schema_editor):
         profession=4
     ).save()
     Skills(
+        title="SQL",
+        description="",
+        logo="",
+        category=3,
+        profession=4
+    ).save()
+    Skills(
         title="WPF",
         description="",
         logo="",
@@ -344,6 +351,13 @@ def create_data(apps, schema_editor):
         description="",
         logo="",
         category=2,
+        profession=1
+    ).save()
+    Skills(
+        title="Ajax",
+        description="",
+        logo="",
+        category=4,
         profession=1
     ).save()
 
