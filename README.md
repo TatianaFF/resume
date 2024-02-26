@@ -2,7 +2,8 @@
 
 ## Запуск проекта
 1. Скачать [docker-compose](https://docs.docker.com/compose/install/)
-2. Клонировать репозиторий `git clone https://github.com/TatianaFF/resume.git`
+2. Клонировать репозиторий 
+`git clone https://github.com/TatianaFF/resume.git`
 3. Запустить `docker-compose up`
 
 ## Описание
