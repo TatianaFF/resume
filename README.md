@@ -1,4 +1,4 @@
-# Проект сайт-визитка
+# Прототип проекта сайт-визитка
 
 ## Запуск проекта
 1. Скачать [docker-compose](https://docs.docker.com/compose/install/)
