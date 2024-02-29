@@ -2,7 +2,6 @@ import {
     Routes,
     Route
 } from "react-router-dom"
-import { Card } from "antd"
 import MainContainer from "../main/MainContainer"
 import SkillsContainer from "../skills/SkillsContainer"
 import EducationContainer from "../education/EducationContainer"

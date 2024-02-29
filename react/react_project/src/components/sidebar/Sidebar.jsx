@@ -1,7 +1,6 @@
 import React from 'react'
 import { Menu, Image, Card } from 'antd'
 import { NavLink } from 'react-router-dom'
-import s from './Sidebar.module.css'
 
 const { Meta } = Card
 

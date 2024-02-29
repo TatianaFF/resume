@@ -1,7 +1,7 @@
-import { Typography, Divider, Descriptions } from 'antd'
+import { Typography, Descriptions } from 'antd'
 import { ContentWrapper } from "../common/contentWrapper/ContentWrapper";
 
-const { Title, Text } = Typography
+const { Text } = Typography
 
 
 const Education = ({ startYear, endYear, institute, department }) => {

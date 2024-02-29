@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Education from "./Education";
+import Education from "./Education"
 import { connect } from "react-redux"
 import {
     getDepartmentEducation,

@@ -18,10 +18,12 @@ const HeaderCustom = ({ contacts }) => {
                     return onClickIconRedirect("mailto:" + c.info)
                 case 'Telegram':
                     return onClickIconRedirect("https://telegram.me/" + c.info)
+                default:
+                    return
             }
         }
 
-        return <Contact info={ c.info } logo={ c.logo } onClickContact={ onClickContact }/>
+        return <Contact key={c.id} info={ c.info } logo={ c.logo } onClickContact={ onClickContact }/>
     })
 
     return (

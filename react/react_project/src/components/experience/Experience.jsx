@@ -1,7 +1,7 @@
-import { Typography, Divider, Table } from 'antd'
+import { Typography, Table } from 'antd'
 import { ContentWrapper } from "../common/contentWrapper/ContentWrapper";
 
-const { Title, Text } = Typography
+const { Text } = Typography
 
 const Experience = ({ experience }) => {
 

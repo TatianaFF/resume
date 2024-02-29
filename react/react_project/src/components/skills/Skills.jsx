@@ -1,7 +1,7 @@
-import { Typography, Divider, Row, Col, Card } from 'antd'
+import { Typography, Row, Col, Card } from 'antd'
 import { ContentWrapper } from "../common/contentWrapper/ContentWrapper";
 
-const { Title, Text } = Typography
+const {  Text } = Typography
 
 const Skills = ({ mapSkills }) => {
 
@@ -10,7 +10,7 @@ const Skills = ({ mapSkills }) => {
         const nameProfession = pcs[0].name
         const categorySkills = pcs[1].map(cs => {
 
-            const nameCategory = cs[0].name
+            // const nameCategory = cs[0].name
             const titlesSkills = cs[1].map(s => s.title)
 
             return (
