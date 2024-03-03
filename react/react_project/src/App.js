@@ -12,7 +12,7 @@ function App({ initialized, initializeApp }) {
 
     useEffect(() => {
         initializeApp()
-    }, [initializeApp])
+    }, [])
 
     return (
         <Layout style={ { background: "#EDEEF0", minHeight: '100%' } }>

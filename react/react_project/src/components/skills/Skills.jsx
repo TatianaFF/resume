@@ -1,9 +1,10 @@
 import { Typography, Row, Col, Card } from 'antd'
-import { ContentWrapper } from "../common/contentWrapper/ContentWrapper";
+import { ContentWrapper } from "../common/contentWrapper/ContentWrapper.jsx"
+import React from 'react'
 
-const {  Text } = Typography
+const { Text } = Typography
 
-const Skills = ({ mapSkills }) => {
+const Skills = ({ mapSkills}) => {
 
     const cardSkills = mapSkills.map(pcs => {
 
@@ -14,7 +15,7 @@ const Skills = ({ mapSkills }) => {
             const titlesSkills = cs[1].map(s => s.title)
 
             return (
-                <p><Text className={ "contentText" }>{ titlesSkills.join(', ') }</Text></p>
+                <p key={ crypto.randomUUID() }><Text className={ "contentText" }>{ titlesSkills.join(', ') }</Text></p>
             )
         })
 

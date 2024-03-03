@@ -34,11 +34,9 @@ const getCategories = (state) => (state.categoriesReducer.categories)
 const getProfessions = (state) => (state.professionsReducer.professions)
 const getSkills = (state) => (state.skillsReducer.skills)
 export const getMapSkills = createSelector(getCategories, getProfessions, getSkills, (categories, professions, skills) => {
-    const professionSkills = professions.map(p =>
+    return professions.map(p =>
         [p, categories.map(c => [c, skills.filter(s => s.profession === p.id && s.category === c.pk)])]
-    ).sort((a,b) => (a[0].id > b[0].id) ? 1 : ((b[0].id > a[0].id) ? -1 : 0))
-
-    return professionSkills
+    ).sort((a, b) => (a[0].id > b[0].id) ? 1 : ((b[0].id > a[0].id) ? -1 : 0))
 })
 
 export const getExperience = (state) => (state.experienceReducer.experience)

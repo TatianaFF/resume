@@ -34,7 +34,7 @@ export const personApi = {
         return instanceAxios.get('professions')
     },
 
-    sendFeedback(email, message) {
+    sendFeedback(email: string, message: string) {
         return instanceAxios.post('feedback', { email, message })
     }
 }

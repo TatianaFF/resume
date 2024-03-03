@@ -270,6 +270,13 @@ def create_data(apps, schema_editor):
         profession=1
     ).save()
     Skills(
+        title="TypeScript",
+        description="",
+        logo="",
+        category=1,
+        profession=1
+    ).save()
+    Skills(
         title="React",
         description="",
         logo="",
